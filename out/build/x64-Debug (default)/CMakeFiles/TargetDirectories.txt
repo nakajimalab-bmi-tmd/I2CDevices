@@ -1,0 +1,17 @@
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/CMakeFiles/install/local.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/CMakeFiles/install.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/CMakeFiles/list_install_components.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/I2C/CMakeFiles/I2C.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/I2C/CMakeFiles/install/local.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/I2C/CMakeFiles/install.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/I2C/CMakeFiles/edit_cache.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/I2C/CMakeFiles/rebuild_cache.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/I2C/CMakeFiles/list_install_components.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/BMX055/CMakeFiles/list_install_components.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/BMX055/CMakeFiles/BMX055.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/BMX055/CMakeFiles/install/local.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/BMX055/CMakeFiles/install.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/BMX055/CMakeFiles/edit_cache.dir
+C:/Users/Onogi/source/repos/I2CDevices/out/build/x64-Debug (default)/BMX055/CMakeFiles/rebuild_cache.dir

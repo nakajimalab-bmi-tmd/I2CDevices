@@ -1,0 +1,10 @@
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/lib/I2C.lib
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/include/I2CBus.h
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/include/I2CSlave.h
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/share/I2C/I2CConfig.cmake
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/share/I2C/I2CConfig-debug.cmake
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/lib/BMX055.lib
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/include/BMG160.h
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/include/BMG160_def.h
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/share/I2C/BMX055Config.cmake
+C:/Users/Onogi/source/repos/I2CDevices/out/install/x64-Debug (default)/share/I2C/BMX055Config-debug.cmake
