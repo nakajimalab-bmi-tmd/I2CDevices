@@ -10,3 +10,5 @@ find_package(libmpsse-i2c CONFIG REQUIRED)
 # Include sub-projects.
 add_subdirectory ("I2C")
 add_subdirectory("BMX055")
+add_subdirectory("AS5048B")
+add_subdirectory("Sample")

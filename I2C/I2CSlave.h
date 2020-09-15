@@ -1,38 +1,41 @@
 #pragma once
-#include "I2CBus.h"
+#include "i2cbus.h"
 
-template <typename Derived>
-class I2CSlave
+namespace i2c
 {
-public:
-	I2CSlave(I2CBus& i2c_bus, uint8_t address) : Bus(i2c_bus), Address(address) {}
-
-	void WriteToReg(uint8_t register_address, uint8_t data)
+	template <typename Derived>
+	class slave
 	{
-		this->Bus.WriteToReg(this->Address, register_address, data);
-	}
+	public:
+		slave(bus& i2c_bus, uint8_t address) : Bus(i2c_bus), Address(address) {}
 
-	void WriteToReg(uint8_t register_address, uint8_t* data, uint32_t length)
-	{
-		this->Bus.WriteToReg(this->Address, register_address, data, length);
-	}
+		void write(uint8_t register_address, uint8_t data)
+		{
+			this->Bus.write(this->Address, register_address, data);
+		}
 
-	void ReadFromReg(uint8_t register_address, uint8_t* data)
-	{
-		return this->Bus.ReadFromReg(this->Address, register_address, data);
-	}
+		void write(uint8_t register_address, uint8_t* data, uint32_t length)
+		{
+			this->Bus.write(this->Address, register_address, data, length);
+		}
 
-	void ReadFromReg(uint8_t register_address, uint8_t* data, uint32_t length)
-	{
-		this->Bus.ReadFromReg(this->Address, register_address, data, length);
-	}
+		void read(uint8_t register_address, uint8_t* data)
+		{
+			return this->Bus.read(this->Address, register_address, data);
+		}
 
-	void Update() 
-	{
-		static_cast<Derived*>(this)->Update();
+		void read(uint8_t register_address, uint8_t* data, uint32_t length)
+		{
+			this->Bus.read(this->Address, register_address, data, length);
+		}
+
+		void update()
+		{
+			static_cast<Derived*>(this)->update();
+		};
+
+	private:
+		bus& Bus;
+		uint8_t Address;
 	};
-
-private:
-	I2CBus& Bus;
-	uint8_t Address;
-};
+}
