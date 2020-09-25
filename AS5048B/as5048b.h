@@ -13,7 +13,6 @@ namespace i2c
 
 	private:
 		double Polarity;
-		uint16_t RawAngle;
 		double Angle;
 	};
 }

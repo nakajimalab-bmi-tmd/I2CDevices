@@ -23,7 +23,7 @@ namespace i2c
 
 		void open(uint8_t channel);
 		void set_configuration(clock_rate const val = clock_rate::FAST_MODE);
-
+		void set_fast_transfer(bool fast_transfer_on = true);
 		void write(uint8_t slave_address, uint8_t register_address, uint8_t data);
 		void write(uint8_t slave_address, uint8_t register_address, uint8_t* data, uint32_t length);
 		void read(uint8_t slave_address, uint8_t register_address, uint8_t* data);
@@ -31,6 +31,7 @@ namespace i2c
 
 	private:
 		void* Handle;
+		bool FastTransfer;
 	};
 }
 

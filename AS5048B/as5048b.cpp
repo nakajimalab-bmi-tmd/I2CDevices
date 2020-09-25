@@ -1,3 +1,4 @@
+#include <iostream>
 #include <boost/math/constants/constants.hpp>
 #include "as5048b.h"
 
@@ -19,8 +20,8 @@ namespace i2c
 		static uint8_t const register_address = 0xFE;		
 		uint8_t buffer[2];
 		this->read(register_address, buffer, 2);
-		this->RawAngle = (static_cast<uint16_t>(buffer[0]) << 6) + static_cast<uint16_t>((buffer[1] & 0x3F));
-		this->Angle = Polarity * static_cast<double>(this->RawAngle) / 16384. * two_pi;
+		uint16_t RawAngle = (static_cast<uint16_t>(buffer[0]) << 6) + static_cast<uint16_t>((buffer[1] & 0x3F));
+		this->Angle = Polarity * static_cast<double>(RawAngle) / 16384. * two_pi;
 	}
 
 	double as5048b::get_angle() const
