@@ -12,7 +12,7 @@ set(AS5048B_SRCS
 	"as5048b.cpp"
 )
 
-add_library(AS5048B)
+add_library(AS5048B STATIC)
 target_sources(AS5048B PRIVATE "${AS5048B_SRCS}")
 set_target_properties(AS5048B PROPERTIES PUBLIC_HEADER "${AS5048B_PUBLIC_HEADS}")
 target_link_libraries(AS5048B PRIVATE ftdi::libmpsse-i2c PUBLIC I2C)

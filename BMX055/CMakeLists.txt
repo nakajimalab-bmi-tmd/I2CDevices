@@ -13,7 +13,7 @@ set(BMX055_SRCS
 	"BMG160.cpp"
 )
 
-add_library(BMX055)
+add_library(BMX055 STATIC)
 target_sources(BMX055 PRIVATE "${BMX055_SRCS}")
 set_target_properties(BMX055 PROPERTIES PUBLIC_HEADER "${BMX055_PUBLIC_HEADS}")
 target_link_libraries(BMX055 PRIVATE ftdi::libmpsse-i2c PUBLIC I2C)

@@ -8,7 +8,7 @@ set(I2C_PUBLIC_HEADS
 	"I2CSlave.h"
 )
 
-add_library(I2C)
+add_library(I2C STATIC)
 target_sources(I2C PRIVATE "I2CBus.cpp")
 set_target_properties(I2C PROPERTIES PUBLIC_HEADER "${I2C_PUBLIC_HEADS}")
 target_link_libraries(I2C PRIVATE ftdi::libmpsse-i2c)
